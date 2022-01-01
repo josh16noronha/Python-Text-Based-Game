@@ -1,0 +1,57 @@
+answer_yes = ["Yes","Y","yes","YES","y"]
+answer_no = ["No","N","no","NO","n"]
+Name = input(str("What is your character's name:"))
+
+print("""
+WELCOME! LET'S START THE ADVENTURE
+
+Hi """ + Name +""", today is december 24 luckly your family has invited you to their place. Will you go? (Yes / No) 
+""")
+
+ans1 = input(">>")
+
+if ans1 in answer_yes:
+    print("\nAs you are headed to your parents house, your doorbell rings, do you want to answer? (Yes / No)\n")
+    ans2 = input(">>")
+    if ans2 in answer_yes:
+      print("\nWhen you answer the door you find out that there is a man who says he is from the city, and he claims that there is a gas leak. Should I let him in? (Yes / No)\n")
+      ans3 = input(">>")
+      if ans3 in answer_yes:
+        print("\nWhen you let him in he seems very suspicious like his badge looks like it was printed in a printer. Do you want to call the police?  (Yes / No)\n")
+        
+        ans4 = input(">>")
+        
+        if ans4 in answer_yes:
+           print("\nYou show him the boiler room, and escuse your-self to the bathroom where you call the police. After 2 minutes the police swarm the apartment and arrest the man who turned out to be a murderer (Congrats you Won!!)\n")
+           
+        else:
+           print("\nYou ignored your instincts and went to the boiler room, after 2 minutes the man pulls out a gun knocks you unconcious (You Lose, Game Over!)")
+
+
+    if ans2 in answer_no:
+      print("\nAs you ignored the door and went to drink water you heard glass shatter and a man with a gun knocks you unconcious (You Lose, Game Over!)\n")
+if ans1 in answer_no:
+    print("\nAs you are relaxing in your apartment, your doorbell rings, do you want to answer? (Yes / No)")
+    
+    ans2 = input(">>")
+    
+    if ans2 in answer_yes:
+      print("\nWhen you answer the door you find out that there is a man who says he is from the city, and he claims that there is a gas leak. Should I let him in? (Yes / No)\n")
+      ans3 = input(">>")
+      if ans3 in answer_yes:
+        print("\nWhen you let him in he seems very suspicious like his badge looks like it was printed in a printer. Do you want to call the police?  (Yes / No)\n")
+        
+        ans4 = input(">>")
+        
+        if ans4 in answer_yes:
+           print("\nYou show him the boiler room, and escuse your-self to the bathroom where you call the police. After 2 minutes the police swarm the apartment and arrest the man who turned out to be a murderer (Congrats you Won!!)\n")
+           
+        else:
+           print("\nYou ignored your instincts and went to the boiler room, after 2 minutes the man pulls out a gun knocks you unconcious (You Lose, Game Over!)")
+    if ans2 in answer_no:
+      print("\nAs you ignored the door and went to drink water you heard glass shatter and a man with a gun knocks you unconcious (You Lose, Game Over!)\n")
+      
+      
+      
+      
+  
